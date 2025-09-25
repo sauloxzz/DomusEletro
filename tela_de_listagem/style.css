@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Bellota", system-ui;
+  font-family: "Manrope", system-ui;
 }
 
 body{
@@ -14,6 +14,21 @@ header {
   background-color: #1B5C88;
   height: 100px;
 }
+
+
+header svg{
+  color: #ffffff;
+
+}.icone_lupa {
+  color: #000000;
+}
+
+header h1{
+  color: white;
+}
+
+
+
 
 .container_cabecalho {
   display: flex;
@@ -138,7 +153,7 @@ header {
 }
 
 .card img{
-  width: 100%;
+  width: 70%;
 }
 
 .card p,
@@ -180,8 +195,9 @@ footer{
 }
 
 footer p{
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Manrope", system-ui;
   text-align: center;
+  color: #ffffff;
 }
 
 
