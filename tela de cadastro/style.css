@@ -17,11 +17,19 @@ body {
 
 header {
   background-color: var(--corPrincipal);
-  height: 100px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+header h1{
+  font-family: "manrope"  , system-ui;
+  color: #ffffff;
+  font-size: 32px;
+}
+
+
 
 .container_cabecalho {
   display: flex;
@@ -107,7 +115,7 @@ header {
 
 .box_cadastro {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   width: 90%;
   max-width: 1440px;
   /* background-color: aquamarine; */
@@ -121,7 +129,15 @@ header {
 .cadastro_coluna2 {
   /* background-color: lightskyblue; */
   width: 45%;
+  border-radius: 60px;
+  resize: none;
 }
+
+.cadastro_coluna2 textarea {
+  resize: none;
+  border-radius: 10px;
+}
+
 
 .categoria_img {
   display: flex;
