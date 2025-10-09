@@ -7,7 +7,19 @@
 }
 
 body{
-  background-color: #9EA4B0;
+  background-color: #d6dae4;
+}
+
+#sombra {
+  width: 100vw;
+  height: 200px;
+  background-color: #1B5C8865;
+  position: fixed;
+  z-index: 2;
+  backdrop-filter: blur(30px);
+  top: -210px;
+  overflow-y: hidden;
+  transition: .5s;
 }
 
 header {
@@ -73,11 +85,16 @@ header h1{
   font-size: 1rem;
 }
 
+.menu_barras {
+  width: 50px;
+  color: #000000;
+  display: none;
+  z-index: 2;
+}
 
 
 
-
-/* BANNER */
+/* BANNER
 .banner {
   width: 100%;
   aspect-ratio: 2.2;
@@ -86,7 +103,7 @@ header h1{
   display: flex;
   justify-content: center;
   margin-top: 50px;
-}
+} */
 
 .container {
   width: 90%;
@@ -205,8 +222,30 @@ footer p{
 
 
 /* MEDIA */
-@media screen and (max-width: 600px){
-  .banner{
+@media screen and (max-width: 768px) {
+  .icone_home {
+    display: none;
+  }
+
+  .box_busca {
+    position: fixed;
+    overflow-y: hidden;
+    top: -100px;
+    z-index: 2;
+    right: 30px;
+    transition: .5s;
+    width: 80%;
+  }
+  
+  .menu_barras{
+    display: block;
+    right: 30px;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
     aspect-ratio: 2.0;
   }
 }
